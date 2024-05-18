@@ -1,0 +1,1932 @@
+:root {
+  --black: #051a2d;
+  --pr: #00adf3;
+  --sc: #5813ee;
+}
+body {
+  background-color: var(--black);
+  color: #fff;
+  padding: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/************************* NavBar ****************************/
+#NavBar {
+  width: 95%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+}
+#NavBar h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  text-shadow: 5px 5px 20px var(--pr);
+}
+#NavBar h1 span {
+  color: var(--pr);
+}
+#div_Btn_Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.btn_Nav {
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  transition: 0.4s;
+}
+.btn_Nav:hover {
+  color: var(--pr);
+  text-decoration: underline;
+  cursor: pointer;
+}
+/******************** My Name *************************/
+#Div_MyName {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#My_nameL {
+  width: 45%;
+  height: 70%;
+  padding: 20px;
+  display: flex;
+  float: left;
+  margin: auto;
+  margin-left: 10px;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 4px solid var(--pr);
+  border-left: 4px solid var(--pr);
+  border-bottom: 4px solid var(--sc);
+  border-right: 4px solid var(--sc);
+  box-shadow: 0 0 20px var(--sc);
+  background-color: #0003064e;
+  gap: 40px;
+  transform: scale(0.98);
+
+  transition: 0.4s;
+}
+#My_nameL:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px var(--black);
+  border-bottom: 4px solid var(--pr);
+  border-right: 4px solid var(--pr);
+  border-top: 4px solid var(--sc);
+  border-left: 4px solid var(--sc);
+}
+#My_nameL h4 {
+  font-size: 40px;
+}
+#My_nameL h1 {
+  color: var(--pr);
+  text-shadow: 5px 0 10px var(--sc);
+}
+#btn_My_name {
+  padding: 8px;
+  background-color: var(--sc);
+  width: 200px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+#btn_My_name:hover {
+  border: 2px solid var(--pr);
+  cursor: pointer;
+  color: var(--pr);
+  background-color: transparent;
+}
+#My_nameL p {
+  font-size: 18px;
+  line-height: 25px;
+  opacity: 1;
+}
+#My_nameR {
+  width: 60%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  float: right;
+  justify-content: center;
+  transition: 0.4s;
+}
+#My_nameR:hover {
+  transform: scale(1.02);
+}
+/*********** Servies ****************/
+#div_Servies {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Service {
+  width: 20%;
+  height: 60vh;
+  background-color: #1111116f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--pr);
+  box-shadow: 0 0 20px var(--pr);
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+#img_servies {
+  width: 30%;
+  border-radius: 50%;
+  padding: 10px;
+  border-bottom: 5px solid var(--sc);
+  border-top: 5px solid var(--sc);
+  box-shadow: 0 0 40px var(--pr);
+  transition: 0.4s;
+}
+#img_servies:hover {
+  box-shadow: 0 0 40px var(--sc);
+  transform: scale(1.05);
+}
+#div_servie {
+  width: 60%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.OneServies {
+  width: 30%;
+  height: 360px;
+  box-shadow: 0 0 15px var(--sc);
+  border: 1px solid var(--pr);
+  background-color: #040c1374;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.OneServies h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0 0 10px var(--sc);
+  color: var(--pr);
+}
+.OneServies h6 {
+  font-size: 18px;
+  width: 90%;
+  text-shadow: 0 0 10px var(--sc);
+}
+.OneServies:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px var(--pr);
+}
+/****************** Skilllllls ***************/
+#Mobile_Skills {
+  display: none;
+}
+#div_skills {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}
+#img_Skill {
+  width: 37%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border-radius: 70%;
+  box-shadow: 0 0 20px var(--pr);
+  border: 2px solid var(--pr);
+}
+#img_Skill:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 40px var(--sc);
+  border: 2px solid var(--sc);
+}
+#Skills {
+  width: 55%;
+  height: 80vh;
+  background-color: #2b83d014;
+  box-shadow: 0 0 10px var(--sc);
+  border-radius: 20px;
+}
+#Skills h1 {
+  margin: 20px;
+  font-size: 40px;
+}
+#Skills span {
+  color: var(--sc);
+}
+#Center_skills {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#Row_Skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.imgSkill {
+  border: 2px solid var(--pr);
+  padding: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.imgSkill:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px var(--pr);
+}
+/******************** SnakBar ********************/
+#SnakBar {
+  width: 100%;
+  height: 100vh;
+  columns: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#SnacksL {
+  width: 45%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+#SnacksR {
+  width: 45%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.Container_SnakBar {
+  width: 90%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div_titel_snckbatr {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 19px;
+  padding: 5px 0;
+}
+
+.out_snak {
+  width: 95%;
+  height: 5px;
+  padding: 5px;
+  border: 2px solid var(--pr);
+  border-radius: 20px;
+}
+.in_snak {
+  width: 0;
+  height: 7px;
+  background-color: var(--pr);
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+/**************  Projects ****************/
+#Div_Project {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#main_Project {
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#title_project {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 60px;
+  color: #fff;
+  text-shadow: 0 0 10px var(--sc);
+}
+.div_one_project {
+  width: 30%;
+  height: 150px;
+  border: 2px solid var(--pr);
+  border-radius: 15px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+}
+.ProjactRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#div_Hover {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #000000b7, #000000a3);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 26px;
+  text-align: center;
+  opacity: 0;
+  z-index: 5;
+  transition: 0.8s;
+}
+#div_Hover p {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+#div_Hover:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#img_project {
+  z-index: 1;
+  position: absolute;
+}
+/************** Tellllll my **************/
+#tell_Me {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.One_Soisal {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.4s;
+}
+#Div_Social_ {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.One_Soisal:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+a {
+  color: #fff;
+  text-decoration: nonex;
+}
+
+/* //////////// Size Screen  ////////////// */
+/* Phone */
+@media screen and (max-width: 560px) {
+  /************************* NavBar ****************************/
+  #NavBar {
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+  }
+  #NavBar h1 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 5px 5px 20px var(--pr);
+  }
+  #NavBar h1 span {
+    color: var(--pr);
+  }
+  #div_Btn_Nav {
+    display: none;
+  }
+
+  /******************** My Name *************************/
+  #Div_MyName {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+  }
+  #My_nameL {
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+    transition: 0.4s;
+  }
+  #My_nameR {
+    display: none;
+  }
+
+  /*********** Servies ****************/
+  #div_Servies {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .Service {
+    width: 20%;
+    height: 60vh;
+    background-color: #1111116f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--pr);
+    box-shadow: 0 0 20px var(--pr);
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  #img_servies {
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 60px;
+    border-bottom: 5px solid var(--sc);
+    border-top: 5px solid var(--sc);
+    box-shadow: 0 0 40px var(--pr);
+    transform: scale(0.9);
+    transition: 0.4s;
+  }
+  #img_servies:hover {
+    box-shadow: 0 0 40px var(--sc);
+    transform: scale(0.92);
+  }
+  #div_servie {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .OneServies {
+    width: 100%;
+    box-shadow: 0 0 15px var(--sc);
+    border: 1px solid var(--pr);
+    background-color: #040c1374;
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+  }
+  .OneServies h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px var(--sc);
+    color: var(--pr);
+  }
+  .OneServies h6 {
+    font-size: 25px;
+    width: 90%;
+    text-shadow: 0 0 10px var(--sc);
+  }
+  .OneServies:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px var(--pr);
+  }
+  /****************** Skilllllls ***************/
+  #div_skills {
+    margin-top: 950px;
+    width: 100%;
+    /* height: 90vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #img_Skill {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border-bottom: 5px solid var(--sc);
+    border-top: 5px solid var(--sc);
+    box-shadow: 0 0 40px var(--pr);
+    transform: scale(0.9);
+    transition: 0.4s;
+  }
+  #img_Skill_co {
+    transform: scale(0.9);
+  }
+  #img_Skill:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 40px var(--sc);
+    border: 2px solid var(--sc);
+  }
+  #Skills {
+    width: 95%;
+    /* height: 80vh; */
+    background-color: #2b83d014;
+    box-shadow: 0 0 10px var(--sc);
+    border-radius: 20px;
+  }
+  #Skills h1 {
+    margin: 20px;
+    font-size: 60px;
+  }
+  #Skills span {
+    color: var(--sc);
+  }
+  #Center_skills {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #Mobile_Skills {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #Row_Skills {
+    display: none;
+  }
+  .imgSkill {
+    border: 2px solid var(--pr);
+    padding: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.4s;
+  }
+  .imgSkill:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px var(--pr);
+  }
+  /******************** SnakBar ********************/
+  #SnakBar {
+    width: 100%;
+    height: 100vh;
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+  #SnacksL {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  #SnacksR {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .Container_SnakBar {
+    width: 90%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .div_titel_snckbatr {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 25px;
+    padding: 5px 0;
+  }
+
+  .out_snak {
+    width: 95%;
+    height: 5px;
+    padding: 5px;
+    border: 2px solid var(--pr);
+    border-radius: 20px;
+  }
+  .in_snak {
+    width: 0;
+    height: 7px;
+    background-color: var(--pr);
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+
+  /**************  Projects ****************/
+  #Div_Project {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main_Project {
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #title_project {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: #fff;
+    text-shadow: 0 0 10px var(--sc);
+  }
+  .div_one_project {
+    width: 100%;
+    height: 150px;
+    border: 2px solid var(--pr);
+    border-radius: 15px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+  }
+  .ProjactRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #div_Hover {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000000b7, #000000a3);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 26px;
+    text-align: center;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.8s;
+  }
+  #div_Hover p {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+  }
+  #div_Hover:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  #img_project {
+    z-index: 1;
+    position: absolute;
+  }
+  /************** Tellllll my **************/
+  #tell_Me {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .One_Soisal {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 23px;
+    transition: 0.4s;
+    margin: 6px 0;
+  }
+  #Div_Social_ {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .One_Soisal:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+  a {
+    color: #fff;
+    text-decoration: nonex;
+  }
+}
+/* Width phone */
+@media screen and (min-width: 561px) and (max-width: 767px) {
+  /************************* NavBar ****************************/
+  #NavBar {
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+  }
+  #NavBar h1 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 5px 5px 20px var(--pr);
+  }
+  #NavBar h1 span {
+    color: var(--pr);
+  }
+  #div_Btn_Nav {
+   transform: scale(.9);
+  }
+
+  /******************** My Name *************************/
+  #Div_MyName {
+    width: 100%;
+  }
+  #My_nameL {
+    width: 92%;
+    height: 82vh;
+    margin: auto;
+    margin-top: 70px;
+    transition: 0.4s;
+    display: inline-block;
+  }
+  #My_nameL h4{
+    margin: 11px 0;
+  } #btn_My_name{
+    margin: 11px 0;
+  }
+  #My_nameR {
+    display: none;
+  }
+
+  /*********** Servies ****************/
+  #div_Servies {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 220px;
+    margin-bottom: 10px;
+  }
+  .Service {
+    width: 20%;
+    height: 60vh;
+    background-color: #1111116f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--pr);
+    box-shadow: 0 0 20px var(--pr);
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  #img_servies {
+    width: 55%;
+    border-radius: 50%;
+    margin-top: 40px;
+    border-bottom: 5px solid var(--sc);
+    border-top: 5px solid var(--sc);
+    box-shadow: 0 0 40px var(--pr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.75);
+    transition: 0.4s;
+  }
+  #img_servies:hover {
+    box-shadow: 0 0 40px var(--sc);
+    transform: scale(0.92);
+  }
+  #div_servie {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: row;
+  }
+  .OneServies {
+    width: 30%;
+    height: 67vh;
+    box-shadow: 0 0 15px var(--sc);
+    border: 1px solid var(--pr);
+    background-color: #040c1374;
+    display: flex;
+    padding: 30px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+  }#img_servies_size{
+    transform: scale(.7);
+  }
+  .OneServies h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 10px var(--sc);
+    color: var(--pr);
+  }
+  .OneServies h6 {
+    font-size: 18px;
+    width: 90%;
+    text-shadow: 0 0 10px var(--sc);
+  }
+  .OneServies:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px var(--pr);
+  }
+  /****************** Skilllllls ***************/
+  #div_skills {
+    margin-top: 440px;
+    width: 100%;
+    /* height: 90vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #img_Skill {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border-bottom: 5px solid var(--sc);
+    border-top: 5px solid var(--sc);
+    box-shadow: 0 0 40px var(--pr);
+    transform: scale(0.8);
+    transition: 0.4s;
+  }
+  #img_Skill_co {
+    transform: scale(0.9);
+  }
+  #img_Skill:hover {
+    transform: scale(.8);
+    box-shadow: 0 0 40px var(--sc);
+    border: 2px solid var(--sc);
+  }
+  #Skills {
+    width: 95%;
+    height: 270vh;
+    background-color: #2b83d014;
+    box-shadow: 0 0 10px var(--sc);
+    border-radius: 20px;
+  }
+  #Skills h1 {
+    margin: 20px;
+    font-size: 40px;
+  }
+  #Skills span {
+    color: var(--sc);
+  }
+  #Center_skills {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #Mobile_Skills {    
+    display: none;
+  }
+  #Row_Skills {
+  }
+  .imgSkill {
+    border: 2px solid var(--pr);
+    padding: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.4s;
+    margin: 5px 0;
+  }
+  .imgSkill:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px var(--pr);
+  }
+  /******************** SnakBar ********************/
+  #SnakBar {
+ margin-top: 290px;
+ margin-bottom: 110px;
+  }
+  /**************  Projects ****************/
+  
+  /**************  Projects ****************/
+  #Div_Project {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main_Project {
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  #title_project {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: #fff;
+    text-shadow: 0 0 10px var(--sc);
+  }
+  .div_one_project {
+    width: 55%;
+    height: 150px;
+    border: 2px solid var(--pr);
+    border-radius: 15px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin: 10px auto;
+  }
+  .ProjactRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #div_Hover {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000000b7, #000000a3);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 26px;
+    text-align: center;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.8s;
+  }
+  #div_Hover p {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+  }
+  #div_Hover:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  #img_project {
+    z-index: 1;
+    position: absolute;
+  }
+  /************** Tellllll my **************/
+
+/************** Tellllll my **************/
+#tell_Me {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.One_Soisal {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.4s;
+}
+#Div_Social_ {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.One_Soisal:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+a {
+  color: #fff;
+  text-decoration: nonex;
+}
+
+  /************** Tellllll my **************/
+  #tell_Me {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .One_Soisal {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 23px;
+    transition: 0.4s;
+    margin: 6px 0;
+    transform: scale(.7);
+  }
+  #Div_Social_ {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  .One_Soisal:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+  a {
+    color: #fff;
+    text-decoration: nonex;
+  }
+}
+/* Ibad */
+@media screen and (min-width: 768px) and (max-width: 991px)  {
+  /************************* NavBar ****************************/
+  #NavBar {
+    width: 95%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    
+  }
+  #NavBar h1 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 5px 5px 20px var(--pr);
+  }
+  #NavBar h1 span {
+    color: var(--pr);
+  }
+  #div_Btn_Nav {
+   transform: scale(1);
+  }
+
+  /******************** My Name *************************/
+  #Div_MyName {
+    width: 100%;
+  }
+  #My_nameL {
+    margin-top: 40px;
+    width: 92%;
+    height: 62vh;
+    margin: auto;
+    margin-top: 70px;
+    transition: 0.4s;
+    display: inline-block;
+  }
+  #My_nameL h1{
+    font-size: 50px;
+  }
+    #My_nameL h4{
+    margin: 17px 0;
+    font-size: 70px;
+  } #btn_My_name{
+    margin: 30px 0;
+  }#My_nameL p{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  #My_nameR {
+    display: none;
+  }
+
+  /*********** Servies ****************/
+  #div_Servies {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -90px;
+    margin-bottom: 10px;
+  }
+  .Service {
+    width: 20%;
+    height: 40vh;
+    background-color: #1111116f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid var(--pr);
+    box-shadow: 0 0 20px var(--pr);
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  #img_servies {
+    width: 55%;
+    border-radius: 50%;
+    margin-top: 40px;
+    border-bottom: 5px solid var(--sc);
+    border-top: 5px solid var(--sc);
+    box-shadow: 0 0 40px var(--pr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.3);
+    transition: 0.4s;
+  }
+  #img_servies:hover {
+    box-shadow: 0 0 40px var(--sc);
+    transform: scale(0.92);
+  }
+  #div_servie {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 110px;
+    flex-direction: row;
+  }
+  .OneServies {
+    width: 32%;
+    height: 40vh;
+    box-shadow: 0 0 15px var(--sc);
+    border: 1px solid var(--pr);
+    background-color: #040c1374;
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+  }#img_servies_size{
+    transform: scale(1);
+  }
+  .OneServies h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0 0 10px var(--sc);
+    color: var(--pr);
+  }
+  .OneServies h6 {
+    font-size: 25px;
+    width: 90%;
+    text-shadow: 0 0 10px var(--sc);
+  }
+  .OneServies:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 20px var(--pr);
+  }
+  /****************** Skilllllls ***************/
+  #div_skills {
+    margin-top: 440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #img_Skill {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border-bottom: 5px solid var(--sc);
+    border-top: 5px solid var(--sc);
+    box-shadow: 0 0 40px var(--pr);
+    transform: scale(1.3);
+    transition: 0.4s;
+    margin-bottom: 80px;
+  }
+  #img_Skill_co {
+    transform: scale(0.9);
+  }
+  #img_Skill:hover {
+    transform: scale(.8);
+    box-shadow: 0 0 40px var(--sc);
+    border: 2px solid var(--sc);
+  }
+  #Skills {
+    width: 95%;
+    height: 270vh;
+    background-color: #2b83d014;
+    box-shadow: 0 0 10px var(--sc);
+    border-radius: 20px;
+  }
+  #Skills h1 {
+    margin: 20px;
+    font-size:70px;
+  }
+  #Skills span {
+    color: var(--sc);
+  }
+  #Center_skills {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  #Mobile_Skills {    
+    display: none;
+  }
+  #Row_Skills {
+  }
+  .imgSkill {
+    border: 2px solid var(--pr);
+    padding: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.4s;
+    transform: scale(1.3);
+    margin:27px 10px;
+  }
+  .imgSkill:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px var(--pr);
+  }
+  /******************** SnakBar ********************/
+  #SnakBar {
+ margin-top: 10px;
+ margin-bottom: -110px;
+  }
+
+  #SnacksL {
+    width: 48%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  #SnacksR {
+    width: 48%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .Container_SnakBar {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .div_titel_snckbatr {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 25px;
+    padding: 5px 0;
+  }
+  
+  .out_snak {
+    width: 95%;
+    height: 5px;
+    padding: 5px;
+    border: 2px solid var(--pr);
+    border-radius: 20px;
+  }
+  .in_snak {
+    width: 0;
+    height: 7px;
+    background-color: var(--pr);
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+  /**************  Projects ****************/
+  #Div_Project {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  #main_Project {
+    width: 90%;
+    padding: 10px;
+ 
+  }
+  #title_project {
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 80px;
+    color: #fff;
+    text-shadow: 0 0 10px var(--sc);
+  }
+  .div_one_project {
+    width: 55%;
+    height: 150px;
+    border: 2px solid var(--pr);
+    border-radius: 15px;
+    margin: 150px 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+    margin: 70px auto;
+    transform: scale(1.6);
+  }
+  .ProjactRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #div_Hover {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000000b7, #000000a3);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 26px;
+    text-align: center;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.8s;
+  }
+  #div_Hover p {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+  }
+  #div_Hover:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+  #img_project {
+    z-index: 1;
+    position: absolute;
+  }
+  /************** Tellllll my **************/
+  #tell_Me {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    margin-top: 25px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .One_Soisal {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 23px;
+    transition: 0.4s;
+    transform: scale(1.2);
+    margin: 12px 0;
+  }
+  #Div_Social_ {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .One_Soisal:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+  }
+  a {
+    color: #fff;
+    text-decoration: nonex;
+  }
+}
+/* Lap Top */
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+  /************************* NavBar ****************************/
+#NavBar {
+  width: 95%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+}
+#NavBar h1 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  text-shadow: 5px 5px 20px var(--pr);
+}
+#NavBar h1 span {
+  color: var(--pr);
+}
+#div_Btn_Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.btn_Nav {
+  background-color: transparent;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  transition: 0.4s;
+}
+.btn_Nav:hover {
+  color: var(--pr);
+  text-decoration: underline;
+  cursor: pointer;
+}
+/******************** My Name *************************/
+#Div_MyName {
+  width: 100%;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#My_nameL {
+  width: 55%;
+  height: 90%;
+  padding: 20px;
+  margin-top: 55px;
+  display: flex;
+  float: left;
+  margin: auto;
+  margin-left: 10px;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 4px solid var(--pr);
+  border-left: 4px solid var(--pr);
+  border-bottom: 4px solid var(--sc);
+  border-right: 4px solid var(--sc);
+  box-shadow: 0 0 20px var(--sc);
+  background-color: #0003064e;
+  gap: 40px;
+  transform: scale(.85);
+
+  transition: 0.4s;
+}
+#My_nameL:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px var(--black);
+  border-bottom: 4px solid var(--pr);
+  border-right: 4px solid var(--pr);
+  border-top: 4px solid var(--sc);
+  border-left: 4px solid var(--sc);
+}
+#My_nameL h4 {
+  font-size: 40px;
+}
+#My_nameL h1 {
+  color: var(--pr);
+  text-shadow: 5px 0 10px var(--sc);
+}
+#btn_My_name {
+  padding: 8px;
+  background-color: var(--sc);
+  width: 200px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+#btn_My_name:hover {
+  border: 2px solid var(--pr);
+  cursor: pointer;
+  color: var(--pr);
+  background-color: transparent;
+}
+#My_nameL p {
+  font-size: 18px;
+  line-height: 25px;
+  opacity: 1;
+}
+#My_nameR {
+  width: 60%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  float: right;
+  justify-content: center;
+  transform: scale(.9);
+  transition: 0.4s;
+}
+#My_nameR:hover {
+  transform: scale(1.02);
+}
+/*********** Servies ****************/
+#div_Servies {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Service {
+  width: 20%;
+  height: 60vh;
+  background-color: #1111116f;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid var(--pr);
+  box-shadow: 0 0 20px var(--pr);
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+#img_servies {
+  width: 40%;
+  border-radius: 50%;
+  padding: 10px;
+  border-bottom: 5px solid var(--sc);
+  border-top: 5px solid var(--sc);
+  box-shadow: 0 0 40px var(--pr);
+  transform: scale(.8);
+  transition: 0.4s;
+}
+#img_servies:hover {
+  box-shadow: 0 0 40px var(--sc);
+  transform: scale(1.05);
+}
+#div_servie {
+  width: 60%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  transform: scale(.95);
+}
+.OneServies {
+  width: 30%;
+  height: 400px;
+  box-shadow: 0 0 15px var(--sc);
+  border: 1px solid var(--pr);
+  background-color: #040c1374;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: 0.4s;
+}#img_servies_size{
+  transform: scale(.8);
+}
+.OneServies h2 {
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 0 0 10px var(--sc);
+  color: var(--pr);
+}
+.OneServies h6 {
+  font-size: 18px;
+  width: 90%;
+  text-shadow: 0 0 10px var(--sc);
+}
+.OneServies:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px var(--pr);
+}
+/****************** Skilllllls ***************/
+#Mobile_Skills {
+  display: none;
+}
+#div_skills {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+}#img_Skill_co{
+  transform: scale(1);
+}
+#img_Skill {
+  width: 37%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  border-radius: 70%;
+  box-shadow: 0 0 20px var(--pr);
+  border: 2px solid var(--pr);
+  transform: scale(.7);
+}
+
+#Skills {
+  width: 55%;
+  height: 80vh;
+  background-color: #2b83d014;
+  box-shadow: 0 0 10px var(--sc);
+  border-radius: 20px;
+}
+#Skills h1 {
+  margin: 20px;
+  font-size: 40px;
+}
+#Skills span {
+  color: var(--sc);
+}
+#Center_skills {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+#Row_Skills {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.imgSkill {
+  border: 2px solid var(--pr);
+  padding: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.imgSkill:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 20px var(--pr);
+}
+/******************** SnakBar ********************/
+#SnakBar {
+  width: 100%;
+  height: 100vh;
+  columns: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#SnacksL {
+  width: 45%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+#SnacksR {
+  width: 45%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.Container_SnakBar {
+  width: 90%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div_titel_snckbatr {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 19px;
+  padding: 5px 0;
+}
+
+.out_snak {
+  width: 95%;
+  height: 5px;
+  padding: 5px;
+  border: 2px solid var(--pr);
+  border-radius: 20px;
+}
+.in_snak {
+  width: 0;
+  height: 7px;
+  background-color: var(--pr);
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+/**************  Projects ****************/
+#Div_Project {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+#main_Project {
+  width: 90%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#title_project {
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 60px;
+  color: #fff;
+  text-shadow: 0 0 10px var(--sc);
+}
+.div_one_project {
+  width: 40%;
+  height: 150px;
+  border: 2px solid var(--pr);
+  border-radius: 15px;
+  margin: 10px 0;
+  overflow: hidden;
+  position: relative;
+  transform: scale(.9);
+}
+.ProjactRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#div_Hover {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #000000b7, #000000a3);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 26px;
+  text-align: center;
+  opacity: 0;
+  z-index: 5;
+  transition: 0.8s;
+}
+#div_Hover p {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+#div_Hover:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+#img_project {
+  z-index: 1;
+  position: absolute;
+}
+/************** Tellllll my **************/
+#tell_Me {
+  width: 100%;
+  height: 30vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.One_Soisal {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  transition: 0.4s;
+}
+#Div_Social_ {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.One_Soisal:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+a {
+  color: #fff;
+  text-decoration: nonex;
+}
+}
