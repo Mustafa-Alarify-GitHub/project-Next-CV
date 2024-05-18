@@ -1,5 +1,3 @@
-```bash
-npm run dev
 
 <img src="11.png" alt="">
 
